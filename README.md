@@ -13,3 +13,12 @@ hi
 * 1
    + 1-1
  * 2
+
+console.log('hi');
+
+
+***
+*ltalic*
+**bold**
+
+***
