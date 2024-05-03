@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>나의 기록</title>
+    <style>
+        @font-face {
+        font-family: 'noto';
+        src: url(./fonts/NotoSansKR-Medium.ttf);} 
+        @font-face {
+            font-family: 'on';
+            src: url(./fonts/on.ttf);}
+        :root{
+            font-family: 'on';
+            font-size: 30px;
+            --main-color:#a6886d;
+            --sub-color01:#9c9b9b;
+            --sub-color02:#f2ebdf;
+        }
+        #header{
+            position: fixed; 
+            top: 0;
+            right: 0;
+            left: 0;
+            background-color: white;
+        }
+        #header .container{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        #header .container h1{ 
+            width: 80px;
+            padding: 10px;
+        }
+        #header .container h1 span{
+            display: none; 
+        }
+        #header .container .user-id{
+            font-size: 32px;
+        }
+
+        #header .container nav{
+            width: 100%;
+            border: 5px solid #a6886d;
+            border-left: none;
+            border-right: none;
+            padding: 10px;
+        }
+        #header .container nav ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        #header li:first-child{
+            color: #a6886d;
+        }
+
+
+
+        #footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #f2ebdf;
+            padding: 10px;
+        }
+      
+        #footer .container ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        #footer .container ul li{
+            width: 50px;
+        }
+
+
+
+
+        #sec{
+            padding-top: 150px;
+            padding-bottom: 80px;
+        }
+
+        #sec .btn{
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px;
+        }
+        .list-items{
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .list-item{
+            grid-column: 1/-1;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        #sec .emotion img{
+           
+        }
+        #header .list-item .img-box:first-child{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+           <h1>
+                <a href="#">
+                    <div class="img-box"><img src="./images/logo.png" alt="D-로그 로고"></div>
+                    <span>D-로그</span>
+                </a>
+            </h1>
+            <span class="user-id">yemurf</span>
+            <nav>
+                <ul>
+                    <li><a href="./my.html">나의 기록</a></li>
+                    <li><a href="./series.html">기록집</a></li>
+                    <li><a href="./bookmark.html">책갈피</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="sec">
+        <div class="container">
+            <!-- <h2>나의 기록</h2> -->
+            <div class="btn">
+                <select>
+                    <option>등록일 오름차순</option>
+                    <option>등록일 내림차순</option>
+                </select>
+            </div>
+            <div class="list">
+                <ul class="list-items">
+                    <li class="list-item list-item01">
+                        <div class="img-box"><a href="#"><img src="./images/나의기록01.png" alt="나의기록01"></a></div>
+                        <h3><a href="#">나의기록01</a></h3>
+                        <ul class="emotion">
+                            <li class="emotion-good">
+                                <div class="img-box"><img src="./images/good.png" alt="good"></div>
+                                <span>5</span>
+                            </li>
+                            <li class="emotion-chat">
+                                <div class="img-box"><img src="./images/chat.png" alt="chat"></div>
+                                <span>28</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item list-item02">
+                        <div class="img-box"><a href="#"><img src="./images/나의기록02.png" alt="나의기록02"></a></div>
+                        <h3><a href="#">나의기록02</a></h3>
+                        <ul class="emotion">
+                            <li class="emotion-good">
+                                <div class="img-box"><img src="./images/good.png" alt="good"></div>
+                                <span>6</span>
+                            </li>
+                            <li class="emotion-chat">
+                                <div class="img-box"><img src="./images/chat.png" alt="chat"></div>
+                                <span>2</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item list-item03">
+                        <div class="img-box"><a href="#"><img src="./images/나의기록03.png" alt="나의기록03"></a></div>
+                        <h3><a href="#">나의기록03</a></h3>
+                        <ul class="emotion">
+                            <li class="emotion-good">
+                                <div class="img-box"><img src="./images/good.png" alt="good"></div>
+                                <span>6</span>
+                            </li>
+                            <li class="emotion-chat">
+                                <div class="img-box"><img src="./images/chat.png" alt="chat"></div>
+                                <span>8</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item list-item01">
+                        <div class="img-box"><a href="#"><img src="./images/나의기록04.png" alt="나의기록04"></a></div>
+                        <h3><a href="#">나의기록04</a></h3>
+                        <ul class="emotion">
+                            <li class="emotion-good">
+                                <div class="img-box"><img src="./images/good.png" alt="good"></div>
+                                <span>5</span>
+                            </li>
+                            <li class="emotion-chat">
+                                <div class="img-box"><img src="./images/chat.png" alt="chat"></div>
+                                <span>28</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item list-item02">
+                        <div class="img-box"><a href="#"><img src="./images/나의기록05.png" alt="나의기록05"></a></div>
+                        <h3><a href="#">나의기록05</a></h3>
+                        <ul class="emotion">
+                            <li class="emotion-good">
+                                <div class="img-box"><img src="./images/good.png" alt="good"></div>
+                                <span>6</span>
+                            </li>
+                            <li class="emotion-chat">
+                                <div class="img-box"><img src="./images/chat.png" alt="chat"></div>
+                                <span>2</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item list-item03">
+                        <div class="img-box"><a href="#"><img src="./images/나의기록06.png" alt="나의기록06"></a></div>
+                        <h3><a href="#">나의기록06</a></h3>
+                        <ul class="emotion">
+                            <li class="emotion-good">
+                                <div class="img-box"><img src="./images/good.png" alt="good"></div>
+                                <span>6</span>
+                            </li>
+                            <li class="emotion-chat">
+                                <div class="img-box"><img src="./images/chat.png" alt="chat"></div>
+                                <span>8</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item list-item01">
+                        <div class="img-box"><a href="#"><img src="./images/나의기록07.png" alt="나의기록07"></a></div>
+                        <h3><a href="#">나의기록07</a></h3>
+                        <ul class="emotion">
+                            <li class="emotion-good">
+                                <div class="img-box"><img src="./images/good.png" alt="good"></div>
+                                <span>5</span>
+                            </li>
+                            <li class="emotion-chat">
+                                <div class="img-box"><img src="./images/chat.png" alt="chat"></div>
+                                <span>28</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item list-item02">
+                        <div class="img-box"><a href="#"><img src="./images/나의기록08.png" alt="나의기록08"></a></div>
+                        <h3><a href="#">나의기록08</a></h3>
+                        <ul class="emotion">
+                            <li class="emotion-good">
+                                <div class="img-box"><img src="./images/good.png" alt="good"></div>
+                                <span>6</span>
+                            </li>
+                            <li class="emotion-chat">
+                                <div class="img-box"><img src="./images/chat.png" alt="chat"></div>
+                                <span>2</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item list-item03">
+                        <div class="img-box"><a href="#"><img src="./images/나의기록09.png" alt="나의기록09"></a></div>
+                        <h3><a href="#">나의기록09</a></h3>
+                        <ul class="emotion">
+                            <li class="emotion-good">
+                                <div class="img-box"><img src="./images/good.png" alt="good"></div>
+                                <span>6</span>
+                            </li>
+                            <li class="emotion-chat">
+                                <div class="img-box"><img src="./images/chat.png" alt="chat"></div>
+                                <span>8</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item list-item03">
+                        <div class="img-box"><a href="#"><img src="./images/나의기록10.png" alt="나의기록10"></a></div>
+                        <h3><a href="#">나의기록10</a></h3>
+                        <ul class="emotion">
+                            <li class="emotion-good">
+                                <div class="img-box"><img src="./images/good.png" alt="good"></div>
+                                <span>6</span>
+                            </li>
+                            <li class="emotion-chat">
+                                <div class="img-box"><img src="./images/chat.png" alt="chat"></div>
+                                <span>8</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <div class="img-box"><a href="#"><img src="./images/home.png" alt="home"></a></div>
+                    </li>
+                    <li>
+                        <div class="img-box"><a href="#"><img src="./images/pencil.png" alt="pencil"></a></div>
+                    </li>
+                    <li>
+                        <div class="img-box"><a href="#"><img src="./images/user.png" alt="mypage"></a></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

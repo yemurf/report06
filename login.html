@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <title>Document</title>
+    
+    <style>
+        @font-face {
+        font-family: 'noto';
+        src: url(./fonts/NotoSansKR-Medium.ttf);
+        /* font-family: '온글잎 매일옥자체';
+        src: url(./fonts/온글잎\ 매일옥자체.ttf);
+        */} 
+        @font-face {
+            font-family: 'on';
+            src: url(./fonts/온글잎\ 매일옥자체.ttf);
+        }
+        :root{
+            --main-color:#a6886d;
+            --sub-color01:#9c9b9b;
+            --sub-color02:#f2ebdf;
+        }
+        body{
+            font-family: url(./fonts/NotoSansKR-Medium.ttf);
+        }
+        #header.img-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+        }
+        h1 {
+            font-family: 'noto';
+            font-size: 50px;
+            position: absolute;
+            top: calc(50% + 60px); /* 로고 아래로 60px 위치에 설정 */
+            left: 50%;
+            transform: translateX(-50%);
+            /* margin: 0; 기본 마진 제거 */
+        }
+        .btn{
+            margin: 20px;
+            border: 5px solid var(--main-color);
+            border-radius: 10px;
+        }
+        #header.container.id-box,.pw-box{
+            padding: 10px;
+        }
+        #header.container.id-box,.pw-box{
+            border: 5px solid var(--main-color);
+            border-radius: 20px;
+        }
+        .sec02.forget{
+            text-decoration: 3px solid var(--main-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="img-box">
+                <img src="./images/logo.png" alt="로고">
+            </div>
+            <h1>로그인</h1>
+        </div>
+    </header>
+    <section class="sec01">
+        <div class="id-box">
+            <input type="text" placeholder="아이디를 입력하세요">
+            <input type="button" value="아이디 중복 확인">
+        </div>
+        <div class="pw-box">
+            <input type="text" placeholder="비밀번호를 입력하세요">
+        </div>
+        <div class="btn">
+            <button id="join">회원가입</button>
+            <button id="enter">확인</button>
+        </div>
+    </section>
+    <section class="sec02">
+        <div class="forget">
+            암호를 잊었다면 클릭해주세요
+        </div>
+    </section>
+    <section class="sec03">
+        <div class="container">
+            <div class="sns-login">
+                <img src="./images/mo-btn-kakao.png" alt="카카오 로그인">
+                <img src="./images/mo-btn-naver.png" alt="네이버 로그인">
+                <img src="./images/mo-btn-google.png" alt="구글 로그인">
+            </div>
+        </div>
+    </section>    
+    <footer id="footer">footer</footer>
+</body>
+</html>
