@@ -13,7 +13,7 @@
             font-family: 'on';
             src: url(./fonts/on.ttf);}
         :root{
-            font-family: 'on';
+            font-family: 'on',noto sans kr;
             font-size: 30px;
             --main-color:#a6886d;
             --sub-color01:#9c9b9b;
@@ -96,6 +96,13 @@
         }
         .list-item{
             grid-column: 1/-1;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        #header .list-item .img-box:first-child{
+            width: 100%;
         }
         
     </style>
