@@ -104,12 +104,13 @@
         
         .list-item{
             grid-column: 1/-1;
+            /* grid-column: span 1; */
         }
-
         .list-items{
             padding: 10px;
             display: grid;
             grid-template-columns: 1fr 1fr;
+            /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
             gap: 10px;
         }
     </style>
@@ -136,18 +137,20 @@
     <section id="sec">
         <div class="container">
             <!-- <h2>나의 기록</h2> -->
-            <div class="btn btn-watch">
-                <select>
-                    <option disabled selected>보기정렬방식</option>
-                    <option value="">2*2</option>
-                    <option value="">3*3</option>
-                </select>
-            </div>
-            <div class="btn btn-date">
-                <select>
-                    <option>등록일 오름차순</option>
-                    <option>등록일 내림차순</option>
-                </select>
+            <div class="btn">
+                <div class="btn btn-watch">
+                    <select>
+                        <option disabled selected>보기정렬방식</option>
+                        <option value="">2*2</option>
+                        <option value="">3*3</option>
+                    </select>
+                </div>
+                <div class="btn btn-date">
+                    <select>
+                        <option>등록일 오름차순</option>
+                        <option>등록일 내림차순</option>
+                    </select>
+                </div>
             </div>
             <div class="list">
                 <ul class="list-items">
