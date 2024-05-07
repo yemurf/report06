@@ -7,4 +7,4 @@ styleguide 작성
 모바일 버전으로 
 
 개인의 이야기를 사진을 첨부하여 매체에 간편하게 기록을 남길 수 있는 사이트를 구현해보았다.
-[link] 
+[link] https://yemurf.github.io/report06/my.html
