@@ -102,8 +102,12 @@
         }
 
         
-        .list-item{
-            grid-column: 1/-1;
+        .list-item:nth-child(2n+1){
+            grid-column: 1/2;
+            /* grid-column: span 1; */
+        }
+        .list-item:nth-child(2n){
+            grid-column:2/-1;
             /* grid-column: span 1; */
         }
         .list-items{
